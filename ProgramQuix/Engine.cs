@@ -50,7 +50,11 @@ namespace ProgramQuix
             //all keys and values
             //from the Terms dictionary
             //to the string output
-            return output;
+            foreach (var content in quiz.TermsAndDefinitions) //var is used when tackling Key & Value
+            {
+                output += content.ToString();
+            }
+            return output + "\n";
         }
 
         //THIRD
