@@ -8,5 +8,9 @@ namespace ProgramQuix
 {
     internal class Atomic
     {
+        public void Start()
+        {
+
+        }
     }
 }
