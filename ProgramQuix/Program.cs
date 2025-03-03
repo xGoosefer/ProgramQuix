@@ -1,4 +1,10 @@
-﻿namespace ProgramQuix
+﻿/*
+ * Progam Quiz
+ * Roberto A. Ramirez
+ * 3/3/25
+ * */
+
+namespace ProgramQuix
 {
     internal class Program
     {
