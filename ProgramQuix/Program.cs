@@ -11,7 +11,8 @@ namespace ProgramQuix
         static void Main(string[] args)
         {
             Console.Title = "39 Quiz";
-           new Atomic().Start();
+            //new Atomic().Start();
+            new Engine().Start();
         }
     }
 }
