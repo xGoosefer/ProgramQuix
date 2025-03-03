@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 using static System.Console;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace ProgramQuix
 {
@@ -29,8 +30,13 @@ namespace ProgramQuix
             contents = GetDataFromTextFile("../../../data/vocabData.txt");
             //save data read in to the contents string array
             //to the quiz.TermsAndDefinitions dictionary structure
-            //using Key-Value pairs for the
+            //using Key-Value pairs for there
             //terms and definitions
+            for (int i = 0; i < contents.Length; i++) //contents is holding the data thus it has the length
+            {
+                quiz.TermsAndDefinitions.Add(contents[i], contents[i + 1]); //we need two values and this is the best way to add both of them to the dictionary
+                i++;
+            }
 
         }
         private string[] GetDataFromTextFile(string path) => File.ReadAllLines(path);
